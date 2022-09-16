@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body class=" bg-slate-900">
+    <div class="container mx-auto bg-slate-800 p-6 w-96 mt-40 rounded-2xl">
+        <img class="star rounded-full bg-slate-700 p-4" src="images/icon-star.svg" alt="">
+
+        <h1 class="text-3xl text-white mt-6 font-bold"> How did we do? </h1>
+        <p class="text-gray-500 mt-6 font-medium"> Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering! </p>
+
+
+        <div class="btn mt-6 space-x-3 font-medium">
+            <button id="btns" class="btnn rounded-full hover:bg-orange-500 active:bg-gray-500 focus:outline-none focus:ring focus:ring-violet-300 hover:text-white hover:font-semibold text-gray-400 bg-slate-700 p-5"> 1 </button>
+            <button id="btns" class="btnn rounded-full hover:bg-orange-500 active:bg-gray-500 focus:outline-none focus:ring focus:ring-violet-300 hover:text-white hover:font-semibold text-gray-400 bg-slate-700 p-5"> 2 </button>
+            <button id="btns" class="btnn rounded-full hover:bg-orange-500 active:bg-gray-500 focus:outline-none focus:ring focus:ring-violet-300 hover:text-white hover:font-semibold text-gray-400 bg-slate-700 p-5"> 3 </button>
+            <button id="btns" class="btnn rounded-full hover:bg-orange-500 active:bg-gray-500 focus:outline-none focus:ring focus:ring-violet-300 hover:text-white hover:font-semibold text-gray-400 bg-slate-700 p-5"> 4 </button>
+            <button id="btns" class="btnn rounded-full hover:bg-orange-500 active:bg-gray-500 focus:outline-none focus:ring focus:ring-violet-300 hover:text-white hover:font-semibold text-gray-400 bg-slate-700 p-5"> 5 </button>
+        </div>
+
+        <button class="submit-btn mt-10 font-medium bg-orange-500 hover:bg-white hover:text-gray-700 w-full h-12 text-white rounded-full" id="submit-btn-el"> SUBMIT </button>
+    </div>
+
+
+    <div class="modal fixed hidden left-0 right-0 top-0 bottom-0 justify-center items-center container mx-auto bg-slate-800 p-6 w-96 h-4/5 mt-20 rounded-2xl" id="container">
+        <div class="flex flex-col items-center mt-10 h-80">
+            <img src="images/illustration-thank-you.svg" alt="" class="mt-7">
+
+            <div class="" id="result-el"></div>
+            <p class="bg-slate-700 text-orange-500 mt-10 p-3 rounded-full"> You selected <span id="ratings"> 0 </span>out of 5 </p>
+            <h1 class="text-white font-bold text-3xl mt-10"> Thank You! </h1>
+
+            <p class="text-slate-400 text-center mt-5 font-medium"> We appreciate you taking the time to give a rating. If you ever need more support, don`t hesitate to get in touch!</p>
+
+            <button class="close-btn mt-5">
+                    <img src="images/close-button.jpg" alt="" class="w-7" id="close-btn">
+            </button>
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
